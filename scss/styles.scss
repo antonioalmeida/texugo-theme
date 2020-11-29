@@ -42,68 +42,6 @@
 	src: url('https://cdn.rawgit.com/AndrewBelt/WiTeX/master/fonts/lmmono10-italic.woff') format('woff');
 }
 
-// Source Sans Pro
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-weight: normal;
-	font-style: normal;
-	src: url('./fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
-}
-
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-weight: normal;
-	font-style: italic;
-	src: url('./fonts/source-sans-pro/SourceSansPro-It.otf') format('opentype');
-}
-
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-weight: bold;
-	font-style: normal;
-	src: url('./fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
-}
-
-@font-face {
-	font-family: 'Source Sans Pro';
-	font-weight: bold;
-	font-style: italic;
-	src: url('./fonts/source-sans-pro/SourceSansPro-BoldIt.otf') format('opentype');
-}
-
-// 
-@font-face {
-	font-family: 'Libre Baskerville';
-	font-weight: normal;
-	font-style: normal;
-	src: url('./fonts/libre-baskerville/LibreBaskerville-Regular.otf') format('opentype');
-}
-
-@font-face {
-	font-family: 'Libre Baskerville';
-	font-weight: normal;
-	font-style: italic;
-	src: url('./fonts/libre-baskerville/LibreBaskerville-It.otf') format('opentype');
-}
-
-@font-face {
-	font-family: 'Libre Baskerville';
-	font-weight: bold;
-	font-style: normal;
-	src: url('./fonts/libre-baskerville/LibreBaskerville-Bold.otf') format('opentype');
-}
-
-
-// // overrider bulma defaults
-// $grey-darker: #584029;
-// $dark: #584029;
-// $grey-lighter: #f8f1e3;
-// $light:#f8f1e3; 
-// /*$blue: #760411;*/
-// $blue: #a00;
-// $cyan: #b8ab99;
-// $device: 320px;
-
 // light mode
 $grey-darker: #000;
 $dark: #000;
@@ -113,23 +51,13 @@ $blue: #a00;
 $cyan: #000;
 $device: 320px;
 
-// dark mode WIP
-// $grey-darker: #f8f8f2;
-// $dark: #f8f8f2;
-// $grey-lighter: #282a36;
-// $light:#f8f1e3; 
-// $blue: #8be9fd;
-// $cyan: #f8f8f2;
-// $device: 320px;
-
 $primary: $grey-darker;
 $link: $blue;
 $link-hover: #202020;
 $pre-background: $grey-lighter;
 $family-serif: "Latin Modern Roman", serif;
 $family-sans-serif: "Latin Modern Roman", serif;
-//$family-sans-serif: "Source Sans Pro", sans-serif;
-//$family-serif: "Libre Baskerville", serif;
+
 $body-background-color: $grey-lighter;
 $navbar-background-color: $grey-lighter;
 $navbar-item-hover-background-color: $cyan;
