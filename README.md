@@ -1,4 +1,4 @@
-# Charaka (ಚರಕ)
+# Tex (ಚರಕ)
 
 Minimalistic and Responsive blog theme for hugo. Uses css framework [Bulma](https://bulma.io/).
  
