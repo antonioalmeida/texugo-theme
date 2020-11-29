@@ -1,0 +1,33 @@
+<div class="container">
+  <nav class="navbar level">
+    <div class="navbar-brand">
+      <div>
+        <a class="nav-item" href="{{ .Site.BaseURL }}">
+          <span class="title is-4">~/</span>
+        </a>
+        {{ if .Section }}
+        <a class="nav-item" href="{{ .Site.BaseURL }}/{{.Section}}">
+          <span class="title is-4">{{.Section}}</span>
+        </a>
+        {{ end }}
+        {{ if .Params.linktitle}}
+        <a class="nav-item" href="{{ .Site.BaseURL }}/{{.Section}}/{{.Params.linktitle}}">
+          <span class="title is-4">/{{.Params.linktitle}}</span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    <div class="navbar-menu has-text-centered is-active">
+     
+      <div class="navbar-end is-centered">
+        {{ range .Site.Params.social }}
+        <a href="{{ .url | absURL }}" rel="me">
+          <span class="icon">
+            <i class="{{ .fa_icon }}"></i>
+          </span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </nav>
+</div>

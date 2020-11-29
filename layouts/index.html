@@ -1,0 +1,90 @@
+<div class="container">
+  {{ partial "header" . }}
+  {{ partial "nav" . }}
+
+  <main class="container">
+    <div class="columns">
+
+      <div class="column is-one-third">
+        <a href="{{ .Site.BaseURL }}">
+        <h4><strong>António Almeida</strong></h4>
+        </a>
+        <h6>
+          Software Engineer,
+        </h6>
+        <h6>
+          Handball Player,
+        </h6>
+        <h6>
+          Enumerator of things.
+        </h6>
+        <br>
+
+        <h6>Socials</h6>
+        <ul>
+          {{ range .Site.Data.socials }}
+          <li>
+            <a href="{{ .url }}">/{{ .name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+
+        <br>
+        <h6>Coming soon</h6>
+        <ul>
+          {{ range .Site.Sections }}
+          <li><a href="{{ .Permalink }}">/{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="column">
+        <article>
+          <div>
+            <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a
+                href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h2>
+            <div class="content">
+              {{ .Content }}
+            </div>
+          </div>
+
+          <div>
+            <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop">
+              Experience</h2>
+            {{ range .Site.Data.experience}}
+            <div class='mt-5'>
+              <div class='columns'>
+                <div class="column">
+                  <h4><a href={{ .company_url }}>{{ .company | markdownify }}</a></h4>
+                </div>
+                <div class="column" align="right">
+                  <h6>{{ .range }}</a></h6>
+                </div>
+              </div>
+              <div>{{ .summary | markdownify }}</div>
+            </div>
+            {{ end }}
+
+          </div>
+        </article>
+
+        <div class="mt-5">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop">
+            Other
+          </h2>
+
+          {{ range .Site.Data.other}}
+          <div class='mt-5'>
+            <div><strong>{{ .title }}: </strong>
+              <p>{{ .summary | markdownify }}</p>
+              </div>
+          </div>
+          {{ end }}
+
+        </div>
+        </article>
+      </div>
+    </div>
+  </main>
+  {{ partial "footer" . }}
+</div>

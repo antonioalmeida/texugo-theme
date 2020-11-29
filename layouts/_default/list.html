@@ -1,0 +1,62 @@
+<div class="container">
+  {{ partial "header" . }}
+  {{ partial "nav" . }}
+  <main class="container">
+    <div class="columns">
+
+      <div class="column is-one-quarter">
+        <a href="{{ .Site.BaseURL }}">
+        <h4><strong>António Almeida</strong></h4>
+        </a>
+        <h6>
+          Software Engineer,
+        </h6>
+        <h6>
+          Handball Player,
+        </h6>
+        <h6>
+          Enumerator of things.
+        </h6>
+        <br>
+
+        <h6>Socials</h6>
+        <ul>
+          {{ range .Site.Data.socials }}
+          <li>
+            <a href="{{ .url }}">/{{ .name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+
+        <br>
+        <h6>Coming soon</h6>
+        <ul>
+          {{ range .Site.Sections }}
+          <li><a href="{{ .Permalink }}">/{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+
+
+      <div class="column">
+        {{ range .Pages.GroupByDate "2006"}}
+        <h4 class="is-3"><strong>{{ .Key }}</strong></h4>
+        {{ range .Pages}}
+        <article class="columns">
+          <div class="column is-2">
+            <h6 class="is-inline" style="white-space: nowrap">{{ .Date.Format "Jan 2" }}</h2>
+          </div>
+          <div class="column">
+            <h4 class="subtitle is-inline is-size-4-mobile is-size-4-desktop"><a
+                href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h4>
+            <div class="content is-hidden-mobile">
+              {{ .Summary | plainify | safeHTML | truncate 100 "" }} <a href="{{ .Permalink }}">(...)</a>
+            </div>
+        </article>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </main>
+  {{ partial "footer" . }}
+</div>

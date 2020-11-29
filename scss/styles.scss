@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Latin Modern Roman';
+	font-weight: normal;
+	font-style: normal;
+	src: url('https://cdn.rawgit.com/AndrewBelt/WiTeX/master/fonts/lmroman10-regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Latin Modern Roman';
+	font-weight: bold;
+	font-style: normal;
+	src: url('https://cdn.rawgit.com/AndrewBelt/WiTeX/master/fonts/lmroman10-bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Latin Modern Roman';
+	font-weight: normal;
+	font-style: italic;
+	src: url('https://cdn.rawgit.com/AndrewBelt/WiTeX/master/fonts/lmroman10-italic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Latin Modern Roman';
+	font-weight: bold;
+	font-style: italic;
+	src: url('https://cdn.rawgit.com/AndrewBelt/WiTeX/master/fonts/lmroman10-bolditalic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Latin Modern Mono';
+	font-weight: normal;
+	font-style: normal;
+	src: url('https://cdn.rawgit.com/AndrewBelt/WiTeX/master/fonts/lmmono10-regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Latin Modern Mono';
+	font-weight: normal;
+	font-style: italic;
+	src: url('https://cdn.rawgit.com/AndrewBelt/WiTeX/master/fonts/lmmono10-italic.woff') format('woff');
+}
+
+// Source Sans Pro
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: normal;
+	font-style: normal;
+	src: url('./fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: normal;
+	font-style: italic;
+	src: url('./fonts/source-sans-pro/SourceSansPro-It.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: bold;
+	font-style: normal;
+	src: url('./fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: bold;
+	font-style: italic;
+	src: url('./fonts/source-sans-pro/SourceSansPro-BoldIt.otf') format('opentype');
+}
+
+// 
+@font-face {
+	font-family: 'Libre Baskerville';
+	font-weight: normal;
+	font-style: normal;
+	src: url('./fonts/libre-baskerville/LibreBaskerville-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Libre Baskerville';
+	font-weight: normal;
+	font-style: italic;
+	src: url('./fonts/libre-baskerville/LibreBaskerville-It.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Libre Baskerville';
+	font-weight: bold;
+	font-style: normal;
+	src: url('./fonts/libre-baskerville/LibreBaskerville-Bold.otf') format('opentype');
+}
+
+
+// // overrider bulma defaults
+// $grey-darker: #584029;
+// $dark: #584029;
+// $grey-lighter: #f8f1e3;
+// $light:#f8f1e3; 
+// /*$blue: #760411;*/
+// $blue: #a00;
+// $cyan: #b8ab99;
+// $device: 320px;
+
+// light mode
+$grey-darker: #000;
+$dark: #000;
+$grey-lighter: #fff;
+$light:#f8f1e3; 
+$blue: #a00;
+$cyan: #000;
+$device: 320px;
+
+// dark mode WIP
+// $grey-darker: #f8f8f2;
+// $dark: #f8f8f2;
+// $grey-lighter: #282a36;
+// $light:#f8f1e3; 
+// $blue: #8be9fd;
+// $cyan: #f8f8f2;
+// $device: 320px;
+
+$primary: $grey-darker;
+$link: $blue;
+$link-hover: #202020;
+$pre-background: $grey-lighter;
+$family-serif: "Latin Modern Roman", serif;
+$family-sans-serif: "Latin Modern Roman", serif;
+//$family-sans-serif: "Source Sans Pro", sans-serif;
+//$family-serif: "Libre Baskerville", serif;
+$body-background-color: $grey-lighter;
+$navbar-background-color: $grey-lighter;
+$navbar-item-hover-background-color: $cyan;
+$button-background-color: $grey-lighter;
+$button-border-color: $cyan;
+$button-hover-border-color: $grey-darker;
+$button-disabled-border-color: $grey-darker;
+$button-focus-box-shadow-color: transparent;
+
+$gap: 64px;
+$fullhd-enabled: false;
+$desktop: 860px + (2 * $gap);
+$widescreen-enabled: false;
+$mobile: 479px;
+
+@import "../node_modules/bulma/bulma.sass";
+
+html {
+    box-sizing: border-box;
+    clear: both;
+}
+
+body {
+    line-height: 1.5;
+    padding: 2em 2em;
+    color: $dark;
+    font-size: 14pt;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $family-serif;
+        border: none;
+        //font-weight: bold;
+    }
+}
+
+.icon {
+    font-size: 1.2em;
+    margin: .5em .5em;
+}
+
+.button {
+    &:active:not([disabled]) {
+        top:1px;
+    }
+}
+
+.container {
+    justify-content: center;
+    
+    h1 {
+        font-size: 2em;
+        color: $link;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: $dark;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        color: $dark;
+    }
+
+    h4 {
+        font-size: 1.1em;
+        color: $dark;
+    }
+
+    h5 {
+        font-size: 1em;
+        padding-right: 2em;
+        color: $dark;
+    }
+
+    h6 {
+        font-size: .75em;
+    }
+
+    .navbar {
+        padding: 3rem 0rem;
+        .navbar-brand {
+            margin-left: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar-menu {
+            box-shadow: 0 0 0;
+            padding: 1em 0;
+        }
+    }
+}
+
+.content {    
+    text-align: justify;
+    max-width: 720px;
+    margin: 1em auto;
+    line-height: 1.5em;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $family-serif;
+        border: none;
+        font-weight: bold;
+    }
+
+    blockquote {
+        background-color: #f1ebe2;
+        border: 1px $cyan solid;
+        border-radius: 5px;
+    }
+
+    code {
+        border-radius: 5px;
+    }
+
+    pre {
+        padding: 1.25em 0;
+        code {
+            border-radius: 5px;
+        }
+    }
+
+    :not(pre) > code { 
+        display: inline !important; 
+        padding: .2em;
+    }
+
+    .button {
+        color: $link;
+        border: 0px;
+        &:hover {
+            color: $link-hover;    
+        }
+    }
+}
+
+#share {
+    padding: 1.5em 0;
+}
+
+// hugo content display fix
+.hugo-figure {
+    img {
+        display: block;
+        margin: 0.7rem auto;
+        border-radius: 5px;
+        object-fit: cover;
+        border: 1px $cyan solid;
+    }
+}
+
+.nav-item {
+    &:hover {
+        color: $link;
+    }
+}
