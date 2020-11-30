@@ -1,6 +1,6 @@
-# Tex (ಚರಕ)
+# Hugo-Tex 
 
-Minimalistic and Responsive blog theme for hugo. Uses css framework [Bulma](https://bulma.io/).
+Minimalistic website theme for Hugo based on the [Tex](https://en.wikipedia.org/wiki/TeX)'s typography. 
  
 ![](https://github.com/natarajmb/charaka-hugo-theme/blob/master/images/screenshot.png)
 
@@ -23,14 +23,14 @@ It serves as an example setup for your documentation.
 
 Copy the `config.toml` in the root directory of your website. Overwrite the existing config file if necessary.
 
-__[config.toml](https://github.com/natarajmb/charaka-hugo-theme/blob/master/exampleSite/config.toml)__:
+__[config.toml](https://github.com/antonioalmeida/tex-hugo-theme/blob/master/exampleSite/config.toml)__:
 
 ```toml
 baseurl = "https://example.com"
 languageCode = "en"
-title = "Charaka"
-theme = "charaka-hugo-theme"
-copyright = "&copy; <a href=\"https://github.com/natarajmb\">Nataraj Basappa</a> 2018"
+title = "Hugo Tex"
+theme = "tex-hugo-theme"
+copyright = "&copy; <a href=\"https://github.com/antonioalmeida\">António Almeida</a> 2020"
 disqusShortname = ""
 googleAnalytics = ""
 
@@ -56,18 +56,17 @@ googleAnalytics = ""
   fa_icon = "fab fa-twitter"
 ```
 
-## Build
+## Development
 
-```
-hugo server
+```shell
+$ hugo server
 ```
 
 You can go to localhost:1313 and this theme should be visible.
 
-## Inspirations
-- [Hemingway](https://themes.gohugo.io/hemingway/)
-- [Journal](https://themes.gohugo.io/hugo-journal/)
-- Apple iBooks colour scheme
+## Inspired by
+- [Tex](https://en.wikipedia.org/wiki/TeX)
+- [WiTex](https://github.com/AndrewBelt/WiTeX)
 
 ## How to tweak
 - Once you have activited the theme as above and running hugo in server mode
@@ -81,4 +80,4 @@ Charaka is licensed under the [MIT License](LICENSE.md).
 
 ## Author
 
-[Nataraj Basappa](https://github.com/natarajmb)
+[António Almeida](https://github.com/antonioalmeida)
