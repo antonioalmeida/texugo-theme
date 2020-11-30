@@ -1,8 +1,8 @@
-# Hugo-Tex 
+# Texugo 🦡
 
 Minimalistic website theme for Hugo based on the [Tex](https://en.wikipedia.org/wiki/TeX)'s typography. 
  
-![](https://github.com/natarajmb/charaka-hugo-theme/blob/master/images/screenshot.png)
+![](./images/screenshot.png)
 
 ## Getting Started
 
@@ -11,12 +11,12 @@ Clone this repository to your hugo theme directory.
 ```
 mkdir themes
 cd themes
-git clone https://github.com/natarajmb/charaka-hugo-theme.git
+git clone https://github.com/antonioalmeida/tex-hugo-theme.git
 ```
 
 ## Configuration
 
-Take a look in the [exampleSite](https://github.com/natarajmb/charaka-hugo-theme/tree/master/exampleSite) folder.
+Take a look in the [exampleSite](https://github.com/antonioalmeida/antonioalmeida.github.io) repository.
 
 This directory contains an example config file and the content for the demo.
 It serves as an example setup for your documentation.
@@ -28,7 +28,7 @@ __[config.toml](https://github.com/antonioalmeida/tex-hugo-theme/blob/master/exa
 ```toml
 baseurl = "https://example.com"
 languageCode = "en"
-title = "Hugo Tex"
+title = "Texugo"
 theme = "tex-hugo-theme"
 copyright = "&copy; <a href=\"https://github.com/antonioalmeida\">António Almeida</a> 2020"
 disqusShortname = ""
@@ -76,7 +76,7 @@ You can go to localhost:1313 and this theme should be visible.
 
 ## License
 
-Charaka is licensed under the [MIT License](LICENSE.md).
+`tex-hugo-theme` is licensed under the [MIT License](LICENSE.md).
 
 ## Author
 
