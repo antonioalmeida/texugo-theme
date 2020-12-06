@@ -1,35 +1,38 @@
 baseurl = "https://example.com"
 languageCode = "en"
-title = "Charaka"
-theme = "charaka-hugo-theme"
-copyright = "&copy; <a href=\"https://github.com/natarajmb\">Nataraj Basappa</a> 2018"
-disqusShortname = ""
+title = "Texugo"
+theme = "tex-hugo-theme"
+copyright = "&copy; <a href=\"https://github.com/antonioalmeida\">António Almeida</a> 2020"
 googleAnalytics = ""
 
 [params]
-
-[author]
-  name = "Nataraj Basappa"
-  homepage = "https://natarajmb.com"
-
-[params.highlight]
-  style = "zenburn"
-
-[params.share]
-  enabled = "true"
+    nickname = "johndoe"
+    name = "John Doee"
+    bio = ["Human being", "Not an animal", "a third thing"]
 
 [[params.social]]
-  url = "about"
-  fa_icon = "fas fa-info"
+  name = "Github"
+  url = "https://example.com"
 
 [[params.social]]
-  url = "https://github.com/natarajmb/"
-  fa_icon = "fab fa-github"
+  name = "Twitter"
+  url = "https://example.com"
 
 [[params.social]]
-  url = "https://www.linkedin.com/in/natarajmb/"
-  fa_icon = "fab fa-linkedin-in"
+  name = "LinkedIn"
+  url = "https://example.com"
 
-[[params.social]]
-  url = "https://twitter.com/natarajmb/"
-  fa_icon = "fab fa-twitter"
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+
+
+
