@@ -22,7 +22,7 @@
 
         <h6>Socials</h6>
         <ul>
-          {{ range .Site.Data.socials }}
+          {{ range .Site.Params.social }}
           <li>
             <a href="{{ .url }}">/{{ .name }}</a>
           </li>

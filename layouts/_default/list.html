@@ -5,26 +5,16 @@
     <div class="columns">
 
       <div class="column is-one-quarter">
-        <a href="{{ .Site.BaseURL }}">
-        <h4><strong>António Almeida</strong></h4>
-        </a>
-        <h6>
-          Software Engineer,
-        </h6>
-        <h6>
-          Handball Player,
-        </h6>
-        <h6>
-          Enumerator of things.
-        </h6>
+        <a href="{{ .Site.BaseURL }}"><h4><strong>{{ .Site.Params.name }}</strong></h4></a>
+        {{ range .Site.Params.bio }}
+        <h6>{{ . }}</h6>
+        {{ end }}
         <br>
 
         <h6>Socials</h6>
         <ul>
-          {{ range .Site.Data.socials }}
-          <li>
-            <a href="{{ .url }}">/{{ .name }}</a>
-          </li>
+          {{ range .Site.Params.social }}
+          <li><a href="{{ .url }}">/{{ .name }}</a></li>
           {{ end }}
         </ul>
 
@@ -36,7 +26,6 @@
           {{ end }}
         </ul>
       </div>
-
 
       <div class="column">
         {{ range .Pages.GroupByDate "2006"}}
