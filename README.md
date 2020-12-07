@@ -1,14 +1,19 @@
-# Texugo 🦡
+# Tex(h)ugo 🦡
 
-Minimalistic website theme for Hugo based on the [Tex](https://en.wikipedia.org/wiki/TeX)'s typography. 
+Minimalistic website theme for [Hugo](https://gohugo.io/) based [Tex](https://en.wikipedia.org/wiki/TeX)'s typography. Live preview available [here](https://antonioalmeida.github.io)
  
+
 ![](./images/screenshot.png)
+
+| Home             |  Post |
+:-------------------------:|:-------------------------:
+![](./images/home.png)  |  ![](./images/post.png)
 
 ## Getting Started
 
-Clone this repository to your hugo theme directory.
+Clone this repository inside your Hugo project theme directory.
 
-```
+```shell
 mkdir themes
 cd themes
 git clone https://github.com/antonioalmeida/tex-hugo-theme.git
@@ -16,12 +21,9 @@ git clone https://github.com/antonioalmeida/tex-hugo-theme.git
 
 ## Configuration
 
-Take a look in the [exampleSite](https://github.com/antonioalmeida/antonioalmeida.github.io) repository.
+Take a look at the [/exampleSite](https://github.com/antonioalmeida/antonioalmeida.github.io) directory.
 
-This directory contains an example config file and the content for the demo.
-It serves as an example setup for your documentation.
-
-Copy the `config.toml` in the root directory of your website. Overwrite the existing config file if necessary.
+Copy the `config.toml` to the root directory of your website and overwrite the existing information as needed.
 
 __[config.toml](https://github.com/antonioalmeida/tex-hugo-theme/blob/master/exampleSite/config.toml)__:
 
@@ -30,49 +32,61 @@ baseurl = "https://example.com"
 languageCode = "en"
 title = "Texugo"
 theme = "tex-hugo-theme"
-copyright = "&copy; <a href=\"https://github.com/antonioalmeida\">António Almeida</a> 2020"
-disqusShortname = ""
+copyright = "&copy; John Doe 2020
 googleAnalytics = ""
 
 [params]
-
-[params.highlight]
-  style = "zenburn"
-
-[[params.social]]
-  url = "about.html"
-  fa_icon = "fas fa-info" 
+    nickname = "johndoe"
+    name = "John Doe"
+    bio = ["Human being", "Not an animal", "a third thing"]
 
 [[params.social]]
-  url = "https://github.com/natarajmb"
-  fa_icon = "fab fa-github"
+  name = "Github"
+  url = "https://example.com"
 
 [[params.social]]
-  url = "https://www.linkedin.com/in/natarajmb/"
-  fa_icon = "fab fa-linkedin-in"
+  name = "Twitter"
+  url = "https://example.com"
 
 [[params.social]]
-  url = "https://twitter.com/natarajmb"
-  fa_icon = "fab fa-twitter"
+  name = "LinkedIn"
+  url = "https://example.com"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
 ```
 
 ## Development
 
 ```shell
+# run local server (localhost:1313)
 $ hugo server
+
+
+# make production build (/public)
+$ hugo --minified
 ```
 
-You can go to localhost:1313 and this theme should be visible.
+**Tip:** Check [this repository](https://github.com/antonioalmeida/antonioalmeida.github.io/blob/master/.github/workflows/gh-pages.yml) as an example on how to deploy via Github Actions.
 
 ## Inspired by
 - [Tex](https://en.wikipedia.org/wiki/TeX)
 - [WiTex](https://github.com/AndrewBelt/WiTeX)
+- [Charaka](https://github.com/natarajmb/charaka-hugo-theme)
 
-## How to tweak
-- Once you have activited the theme as above and running hugo in server mode
-- Install [npm](https://www.npmjs.com/get-npm)
-- Get inside checked-out theme directory and run `npm install`
-- Make required changes to style.scss and run `npm run css-build && npm run css-watch` to live update your changes
+## Tweaking the theme
+- Set up and activate as your website's theme
+- Inside the theme directory install dependencies: `$ npm install`
+- Make required changes to `style.scss` and run `$ npm run css-build && npm run css-watch` to live update your changes
 
 ## License
 

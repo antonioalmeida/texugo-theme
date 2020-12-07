@@ -2,12 +2,12 @@ baseurl = "https://example.com"
 languageCode = "en"
 title = "Texugo"
 theme = "tex-hugo-theme"
-copyright = "&copy; <a href=\"https://github.com/antonioalmeida\">António Almeida</a> 2020"
+copyright = "&copy; John Doe 2020
 googleAnalytics = ""
 
 [params]
     nickname = "johndoe"
-    name = "John Doee"
+    name = "John Doe"
     bio = ["Human being", "Not an animal", "a third thing"]
 
 [[params.social]]
