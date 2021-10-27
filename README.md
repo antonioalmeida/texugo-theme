@@ -32,7 +32,7 @@ baseurl = "https://example.com"
 languageCode = "en"
 title = "Texugo"
 theme = "tex-hugo-theme"
-copyright = "&copy; John Doe 2020
+copyright = "&copy; John Doe 2020"
 googleAnalytics = ""
 
 [params]
