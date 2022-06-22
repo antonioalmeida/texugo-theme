@@ -1,6 +1,6 @@
 # Tex(h)ugo 🦡
 
-Minimalistic website theme for [Hugo](https://gohugo.io/) based [Tex](https://en.wikipedia.org/wiki/TeX)'s typography. Live preview available [here](https://antonioalmeida.github.io)
+Minimalistic website theme for [Hugo](https://gohugo.io/) based on [Tex](https://en.wikipedia.org/wiki/TeX)'s typography. Live preview available [here](https://antonioalmeida.github.io)
  
 
 ![](./images/screenshot.png)
@@ -14,24 +14,24 @@ Minimalistic website theme for [Hugo](https://gohugo.io/) based [Tex](https://en
 Clone this repository inside your Hugo project theme directory.
 
 ```shell
-mkdir themes
-cd themes
-git clone https://github.com/antonioalmeida/tex-hugo-theme.git
+$ mkdir themes
+$ cd themes
+$ git clone https://github.com/antonioalmeida/texugo-theme.git
 ```
 
 ## Configuration
 
 Take a look at the [/exampleSite](https://github.com/antonioalmeida/antonioalmeida.github.io) directory.
 
-Copy the `config.toml` to the root directory of your website and overwrite the existing information as needed.
+Copy the `config.toml` to the root directory of your website and overwrite the existing information as needed:
 
-__[config.toml](https://github.com/antonioalmeida/tex-hugo-theme/blob/master/exampleSite/config.toml)__:
+__[config.toml](https://github.com/antonioalmeida/texugo-theme/blob/master/exampleSite/config.toml)__:
 
 ```toml
 baseurl = "https://example.com"
 languageCode = "en"
 title = "Texugo"
-theme = "tex-hugo-theme"
+theme = "texugo-theme"
 copyright = "&copy; John Doe 2020"
 googleAnalytics = ""
 
@@ -71,12 +71,13 @@ googleAnalytics = ""
 # run local server (localhost:1313)
 $ hugo server
 
-
 # make production build (/public)
 $ hugo --minified
 ```
 
-**Tip:** Check [this repository](https://github.com/antonioalmeida/antonioalmeida.github.io/blob/master/.github/workflows/gh-pages.yml) as an example on how to deploy via Github Actions.
+## Deployment 
+
+- Check [this repository](https://github.com/antonioalmeida/antonioalmeida.github.io/blob/master/.github/workflows/gh-pages.yml) as an example on how to deploy via Github Actions.
 
 ## Inspired by
 - [Tex](https://en.wikipedia.org/wiki/TeX)

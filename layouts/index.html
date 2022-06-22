@@ -39,7 +39,6 @@
       </div>
 
       <div class="column">
-        <article>
           <div>
             <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a
                 href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h2>
@@ -56,6 +55,7 @@
               <div class='columns'>
                 <div class="column">
                   <h4><a href={{ .company_url }}>{{ .company | markdownify }}</a></h4>
+                  <h5>{{ .role }}</h5>
                 </div>
                 <div class="column" align="right">
                   <h6>{{ .range }}</a></h6>
@@ -66,18 +66,18 @@
             {{ end }}
 
           </div>
-        </article>
 
         <div class="mt-5">
           <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop">
-            Other
+            Education
           </h2>
 
-          {{ range .Site.Data.other}}
+          {{ range .Site.Data.education}}
           <div class='mt-5'>
-            <div><strong>{{ .title }}: </strong>
-              <p>{{ .summary | markdownify }}</p>
-              </div>
+                <h6>{{ .range }}</a></h6>
+                <h4><strong>{{ .title | markdownify }}</strong></h4>
+                <h5>{{ .curriculum }}</h5>
+            <div>{{ .summary | markdownify }}</div>
           </div>
           {{ end }}
 
