@@ -6,7 +6,7 @@
 {{ $scratch := newScratch }}
 {{ $scratch.Set "baseURL" .Site.BaseURL }}
 
-<title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
+<title>{{ .Title }} | {{ .Site.Title }}</title>
 
 <link rel="stylesheet" href="{{ $scratch.Get "baseURL" }}/css/styles.css">
 
