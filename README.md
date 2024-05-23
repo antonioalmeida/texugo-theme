@@ -33,7 +33,6 @@ languageCode = "en"
 title = "Texugo"
 theme = "texugo-theme"
 copyright = "&copy; John Doe 2020"
-googleAnalytics = ""
 
 [params]
     nickname = "johndoe"
