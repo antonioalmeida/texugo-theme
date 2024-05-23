@@ -14,18 +14,19 @@
         <h6>Enumerator of things.</h6>
         <br>
 
+        <h6>Content</h6>
+        <ul>
+          {{ range .Site.Sections }}
+          <li><a href="{{ .Permalink }}">/{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+
         <h6>Socials</h6>
         <ul>
           {{ range .Site.Params.social }}
           <li>
             <a href="{{ .url }}">/{{ .name }}</a>
           </li>
-          {{ end }}
-        </ul>
-
-        <ul>
-          {{ range .Site.Sections }}
-          <li><a href="{{ .Permalink }}">/{{ .Title }}</a></li>
           {{ end }}
         </ul>
       </div>
