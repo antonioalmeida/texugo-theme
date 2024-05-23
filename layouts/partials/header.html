@@ -35,4 +35,6 @@ integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbi
 <script type="text/javascript" src="{{ $scratch.Get "baseURL" }}/js/jssocials.js"></script>
 {{ end }}
 
+<link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}/feed.xml" title="{{ .Site.Title }}">
+
 {{ .Scratch.Delete "baseURL" }}
