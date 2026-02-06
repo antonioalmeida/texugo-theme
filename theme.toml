@@ -1,14 +1,12 @@
-name = "Tex Hugo"
+name = "Texugo"
 license = "MIT"
-licenselink = "https://github.com/antonioalmeida/tex-hugo-theme/blob/master/LICENSE.md"
-description = "Minimalistic website theme based on Tex's typography."
-homepage = "https://github.com/antonio/tex-hugo-theme"
-tags = ["tex", personal", "blog", "simple", "clean", "minimalist", "highlight.js", "bluma"]
-features = ["html5", "css3", "highlight.js", "jssocials", "responsive"]
-min_version = 0.46
-
-[params]
+licenselink = "https://github.com/antonioalmeida/texugo-theme/blob/master/LICENSE.md"
+description = "Minimalistic website theme based on TeX's typography."
+homepage = "https://github.com/antonioalmeida/texugo-theme"
+demosite = "https://antonioalmeida.github.io"
+tags = ["tex", "personal", "blog", "simple", "clean", "minimalist", "responsive"]
+features = ["html5", "css3", "highlight.js", "responsive"]
 
 [author]
   name = "António Almeida"
-  homepage = "https://antonioalmeida/tex-hugo-theme"
+  homepage = "https://github.com/antonioalmeida"

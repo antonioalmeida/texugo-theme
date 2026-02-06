@@ -3,11 +3,11 @@
 Minimalistic website theme for [Hugo](https://gohugo.io/) based on [Tex](https://en.wikipedia.org/wiki/TeX)'s typography. Live preview available [here](https://antonioalmeida.github.io)
  
 
-![](./images/screenshot.png)
+![](https://raw.githubusercontent.com/antonioalmeida/texugo-theme/master/images/screenshot.png)
 
 | Home             |  Post |
 :-------------------------:|:-------------------------:
-![](./images/home.png)  |  ![](./images/post.png)
+![](https://raw.githubusercontent.com/antonioalmeida/texugo-theme/master/images/home.png)  |  ![](https://raw.githubusercontent.com/antonioalmeida/texugo-theme/master/images/post.png)
 
 ## Getting Started
 
