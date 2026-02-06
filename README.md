@@ -36,8 +36,10 @@ copyright = "&copy; John Doe 2020"
 
 [params]
     nickname = "johndoe"
+    # Displayed as the main heading in the sidebar
     name = "John Doe"
-    bio = ["Human being", "Not an animal", "a third thing"]
+    # Displayed in the sidebar below the name. Each entry is rendered as a separate line.
+    bio = ["Software Engineer,", "Open Source enthusiast,", "Coffee lover."]
 
 [[params.social]]
   name = "Github"

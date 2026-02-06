@@ -7,11 +7,11 @@
 
       <div class="column is-one-third">
         <a href="{{ .Site.BaseURL }}">
-        <h4><strong>António Almeida</strong></h4>
+        <h4><strong>{{ .Site.Params.name }}</strong></h4>
         </a>
-        <h6>Software Engineer,</h6>
-        <h6>Handball Player,</h6>
-        <h6>Enumerator of things.</h6>
+        {{ range .Site.Params.bio }}
+        <h6>{{ . }}</h6>
+        {{ end }}
         <br>
 
         <h6>Content</h6>
