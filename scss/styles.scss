@@ -165,7 +165,10 @@ body {
     }
 
     pre {
-        padding: 1.25em 0;
+        padding: 1.25em 1.5em;
+        background-color: $code-background;
+        white-space: pre-wrap;
+        word-wrap: break-word;
         code {
             border-radius: 5px;
         }
