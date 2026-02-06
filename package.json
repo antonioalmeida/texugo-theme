@@ -1,12 +1,12 @@
 {
   "name": "texugo-theme",
   "devDependencies": {
-    "bulma": "^0.9.0",
-    "node-sass": "^9.0.0"
+    "bulma": "^1.0.0",
+    "sass": "^1.77.0"
   },
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url --output-style compressed scss/styles.scss static/css/styles.css",
-    "css-watch": "npm run css-build -- --watch",
+    "css-build": "sass --no-source-map --style=compressed scss/styles.scss static/css/styles.css",
+    "css-watch": "sass --no-source-map --style=compressed --watch scss/styles.scss static/css/styles.css",
     "start": "npm run css-watch"
   }
 }

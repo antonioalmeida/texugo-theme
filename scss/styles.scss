@@ -1,5 +1,29 @@
 @charset "utf-8";
 
+// Bulma customization
+@use "../node_modules/bulma/sass/utilities/initial-variables" as iv with (
+  $family-sans-serif: ("Latin Modern Roman", serif),
+  $gap: 64px,
+  $desktop: 988px,
+  $widescreen-enabled: false,
+  $fullhd-enabled: false
+);
+
+@use "../node_modules/bulma/sass/utilities/derived-variables" as dv with (
+  $primary: #000,
+  $link: #a00,
+  $dark: #000
+);
+
+@use "../node_modules/bulma/bulma.scss";
+
+// Theme variables (used in custom styles below)
+$dark: #000;
+$link: #a00;
+$link-hover: #202020;
+$cyan: #000;
+$family-serif: "Latin Modern Roman", serif;
+
 @font-face {
 	font-family: 'Latin Modern Roman';
 	font-weight: normal;
@@ -42,39 +66,6 @@
 	src: url('/fonts/lmmono10-italic.woff') format('woff');
 }
 
-// light mode
-$grey-darker: #000;
-$dark: #000;
-$grey-lighter: #fff;
-$light:#f8f1e3; 
-$blue: #a00;
-$cyan: #000;
-$device: 320px;
-
-$primary: $grey-darker;
-$link: $blue;
-$link-hover: #202020;
-$pre-background: $grey-lighter;
-$family-serif: "Latin Modern Roman", serif;
-$family-sans-serif: "Latin Modern Roman", serif;
-
-$body-background-color: $grey-lighter;
-$navbar-background-color: $grey-lighter;
-$navbar-item-hover-background-color: $cyan;
-$button-background-color: $grey-lighter;
-$button-border-color: $cyan;
-$button-hover-border-color: $grey-darker;
-$button-disabled-border-color: $grey-darker;
-$button-focus-box-shadow-color: transparent;
-
-$gap: 64px;
-$fullhd-enabled: false;
-$desktop: 860px + (2 * $gap);
-$widescreen-enabled: false;
-$mobile: 479px;
-
-@import "../node_modules/bulma/bulma.sass";
-
 html {
     box-sizing: border-box;
     clear: both;
@@ -105,7 +96,7 @@ body {
 
 .container {
     justify-content: center;
-    
+
     h1 {
         font-size: 2em;
         color: $link;
@@ -150,7 +141,7 @@ body {
     }
 }
 
-.content {    
+.content {
     text-align: justify;
     max-width: 720px;
     margin: 1em auto;
@@ -179,8 +170,8 @@ body {
         }
     }
 
-    :not(pre) > code { 
-        display: inline !important; 
+    :not(pre) > code {
+        display: inline !important;
         padding: .2em;
     }
 
@@ -188,7 +179,7 @@ body {
         color: $link;
         border: 0px;
         &:hover {
-            color: $link-hover;    
+            color: $link-hover;
         }
     }
 }
