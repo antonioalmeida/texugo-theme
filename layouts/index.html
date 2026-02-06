@@ -41,10 +41,11 @@
             </div>
           </div>
 
+          {{ if ne .Site.Params.showExperience false }}
           <div>
             <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop">
               Experience</h2>
-            {{ range .Site.Data.experience}}
+            {{ range .Site.Data.experience.entries }}
             <div class='mt-5'>
               <div class='columns'>
                 <div class="column">
@@ -58,15 +59,16 @@
               <div>{{ .summary | markdownify }}</div>
             </div>
             {{ end }}
-
           </div>
+          {{ end }}
 
+          {{ if ne .Site.Params.showEducation false }}
         <div class="mt-5">
           <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop">
             Education
           </h2>
 
-          {{ range .Site.Data.education}}
+          {{ range .Site.Data.education.entries }}
           <div class='mt-5'>
                 <h6>{{ .range }}</a></h6>
                 <h4><strong>{{ .title | markdownify }}</strong></h4>
@@ -76,6 +78,7 @@
           {{ end }}
 
         </div>
+          {{ end }}
         </article>
       </div>
     </div>

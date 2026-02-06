@@ -9,6 +9,9 @@ copyright = "&copy; John Doe 2020"
     name = "John Doe"
     # Displayed in the sidebar below the name. Each entry is rendered as a separate line.
     bio = ["Software Engineer,", "Open Source enthusiast,", "Coffee lover."]
+    # Set to false to hide the Experience or Education sections
+    # showExperience = false
+    # showEducation = false
 
 [[params.social]]
   name = "Github"

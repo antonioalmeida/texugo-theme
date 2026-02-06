@@ -1,0 +1,20 @@
+[[entries]]
+role = "Senior Software Engineer"
+company = "Acme Corp"
+company_url = "https://example.com"
+summary = "Leading backend architecture for the payments platform."
+range = "May 2023 - Present"
+
+[[entries]]
+role = "Software Engineer"
+company = "Acme Corp"
+company_url = "https://example.com"
+summary = "Built core APIs and microservices for the e-commerce platform."
+range = "October 2020 - May 2023"
+
+[[entries]]
+role = "Junior Developer"
+company = "Startup Inc"
+company_url = "https://example.com"
+summary = "Full-stack development on a [SaaS product](https://example.com) for small businesses."
+range = "January 2019 - September 2020"
